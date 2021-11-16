@@ -1,5 +1,5 @@
 {
-  "name": "dota-app",
+  "name": "heroes-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
