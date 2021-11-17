@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    background-color: #1e2022;
+    color: #e0e3e8;
+    .containerMain {
+        display: flex;
+        padding: 11px 30px;
+        justify-content: space-between;
+        .logo {
+            font-size: 55px;
+            letter-spacing: 1.6px;
+            font-family: "KGHardCandy";
+            cursor: pointer;
+        }
+        .navigate {
+            width: 45%;
+            nav {
+                font-size: 16px;
+                font-family: "Poppins";
+                font-weight: 600;
+                height: 100%;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                    li {
+                        list-style: none;
+                        cursor: pointer;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            padding: 8px;
+                        }
+                        span {
+                            height: 4px;
+                            display: block;
+                            background-color: #fff;
+                            position: absolute;
+                            bottom: 0;
+                            width: 0;
+                        }
+                        & .active ~ span {
+                            transition: width 0.3s;
+                            width: 100%;
+                        }
+                        &:nth-child(4) {
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
