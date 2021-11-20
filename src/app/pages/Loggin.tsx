@@ -1,9 +1,10 @@
 import React from 'react'
+import CardAccess from '../components/auth/CardAccess'
 
-const Loggin = ():JSX.Element => {
+const Loggin = (): JSX.Element => {
     return (
         <div>
-            Loggin
+            <CardAccess />
         </div>
     )
 }

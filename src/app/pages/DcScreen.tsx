@@ -1,9 +1,11 @@
 import React from 'react'
+import HeroesList from '../components/heroesList/HeroesList'
 
-const DcScreen = ():JSX.Element => {
+const DcScreen = (): JSX.Element => {
     return (
         <div>
-            Heroes DC
+            <h1>Heroes DC</h1>
+            <HeroesList publisher='DC Comics' />
         </div>
     )
 }

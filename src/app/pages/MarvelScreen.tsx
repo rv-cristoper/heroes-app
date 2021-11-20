@@ -1,9 +1,11 @@
 import React from 'react'
+import HeroesList from '../components/heroesList/HeroesList'
 
-const MarvelScreen = ():JSX.Element => {
+const MarvelScreen = (): JSX.Element => {
     return (
         <div>
-            Heroes Marvel
+            <h1>Heroes Marvel</h1>
+            <HeroesList publisher='Marvel Comics'/>
         </div>
     )
 }
